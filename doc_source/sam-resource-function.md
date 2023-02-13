@@ -16,6 +16,7 @@ Properties:
   [Architectures](#sam-function-architectures): List
   [AssumeRolePolicyDocument](#sam-function-assumerolepolicydocument): JSON
   [AutoPublishAlias](#sam-function-autopublishalias): String
+  [AutoPublishAliasAllProperties](#sam-function-autopublishalias-all-properties): Bool
   [AutoPublishCodeSha256](#sam-function-autopublishcodesha256): String
   [CodeSigningConfigArn](#sam-function-codesigningconfigarn): String
   [CodeUri](#sam-function-codeuri): String | FunctionCode
@@ -76,6 +77,12 @@ AWS SAM generates [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuid
 *Type*: String  
 *Required*: No  
 *AWS CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an AWS CloudFormation equivalent\.
+
+ `AutoPublishAliasAllProperties`   <a name="sam-function-autopublishalias-all-properties"></a>
+*Type*: String  
+*Required*: No  
+*AWS CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an AWS CloudFormation equivalent\.
+
 
  `AutoPublishCodeSha256`   <a name="sam-function-autopublishcodesha256"></a>
 The string value that is used, along with the value in `CodeUri`, to determine whether a new Lambda version should be published\. This property is only used when `AutoPublishAlias` is also defined\.  
