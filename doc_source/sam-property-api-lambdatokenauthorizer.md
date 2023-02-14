@@ -12,6 +12,7 @@ To declare this entity in your AWS Serverless Application Model \(AWS SAM\) temp
 
 ```
   [AuthorizationScopes](#sam-api-lambdatokenauthorizer-authorizationscopes): List
+  [DisableFunctionDefaultPermissions](#sam-api-lambdarequestauthorizer-disablefunctiondefaultpermissions): Boolean
   [FunctionArn](#sam-api-lambdatokenauthorizer-functionarn): String
   [FunctionInvokeRole](#sam-api-lambdatokenauthorizer-functioninvokerole): String
   [FunctionPayloadType](#sam-api-lambdatokenauthorizer-functionpayloadtype): String
@@ -23,6 +24,12 @@ To declare this entity in your AWS Serverless Application Model \(AWS SAM\) temp
  `AuthorizationScopes`   <a name="sam-api-lambdatokenauthorizer-authorizationscopes"></a>
 List of authorization scopes for this authorizer\.  
 *Type*: List  
+*Required*: No  
+*AWS CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an AWS CloudFormation equivalent\.
+
+ `DisableFunctionDefaultPermissions`   <a name="sam-api-lambdarequestauthorizer-disablefunctiondefaultpermissions"></a>
+This property can be used to block the creation of the `AWS::Lambda::Permissions` resource that gives the API permissions to invoke the authorizer function\.  
+*Type*: Boolean
 *Required*: No  
 *AWS CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an AWS CloudFormation equivalent\.
 
